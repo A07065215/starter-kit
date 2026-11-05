@@ -1,0 +1,12 @@
+streamlit>=1.50
+pandas>=2.0
+numpy>=1.26
+plotly>=5.20
+pyarrow>=15
+statsmodels>=0.14
+scikit-learn>=1.4
+pulp>=2.8,<4  # PuLP 4 changed the variable and solver API; the course code uses the classic one
+sqlalchemy>=2.0
+requests>=2.31
+pytest>=8
+anthropic>=0.40

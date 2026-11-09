@@ -4,7 +4,7 @@ from components.charts import daily_units_chart, top_skus_chart
 from data.loaders import load_sales
 
 st.set_page_config(page_title="Sales Explorer", layout="wide")
-st.title("Sales Explorer")
+st.title("Sales Explorer V2")
 
 df = load_sales()
 

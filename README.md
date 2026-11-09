@@ -56,3 +56,17 @@ Always run commands **from the kit root** (the folder with this README); the app
 - Streamlit 1.50 or newer (the code uses `width="stretch"`).
 - PuLP is pinned below 4 in `requirements.txt`: PuLP 4 changed the variable and solver API, and the course code and slides use the classic one.
 - Tested with Python 3.13, pandas 3.0, Streamlit 1.66, statsmodels 0.15, scikit-learn 1.9.
+
+## Comparación con session1/activity2_solution
+
+1. **Gráfica de Top SKUs:** en la solución, `top_skus_chart` recibe `n` como
+   parámetro y dibuja barras verticales. En mi versión el top 10 está fijo y las
+   barras son horizontales y ordenadas. Lo dejé así porque la actividad pedía que
+   la app se comportara igual que en la Actividad 1, y así se leen mejor los
+   nombres de los SKUs.
+
+2. **Ruta del CSV:** en la solución, `load_sales` también puede leer la ruta desde
+   la variable de entorno `SALES_CSV`. En mi versión la ruta es un parámetro con
+   valor por defecto. Lo dejé así porque es más simple y en Streamlit Cloud no
+   necesito configurar variables de entorno; si hace falta, se puede pasar otra
+   ruta a la función.
